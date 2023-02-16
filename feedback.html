@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<!-- This is how HTML comments look like -->
+<html>
+<!-- the title will appear on the page-->
+<head>
+<title>Website feed back</title>
+</head>
+<body style="background-color: rgb(88, 227, 231);">
+<!-- as it is a survey form, we will need to submit the details, hence we use form -->
+<!-- We can give absolute url, or relative url like /nextpage.jsp, and specify POST or GET method -->
+<form action="no.html">
+<!-- If we remove this, every thing will move to the left of the page-->
+<div align="center">
+<!--Adds a heading to the form-->
+<font color="blue" font size="15" align="center">
+<h1>Your experience from different diseases</h1></font>
+<font color="black" font size="5" align="center">
+Enter your name:
+<!-- Input type text for small texts, specify size -->
+<input type="text" name="UserName" size=35 maxlength=35 value="">
+<!--Adds spaces - remove and see what happens -->
+</br></br>
+Enter your Disease:
+<input type="text" name="Deptt" size=35 maxlength=35 value=""> </br> </br>
+Tell us a little about yourself:
+<!-- For writing lot of text like descriptions with text wrapping,
+if you dont want text wrapping, you can add wrap = "off" (horizontal scrollbar -->
+<textarea name="Comments" cols=30 rows=4></textarea> </br> </br>
+Do you exercise at home?
+<!-- Radio buttons help you choose one out of the many values -->
+<input type="radio" name="exe" value=1>Yes
+<input type="radio" name="exe" value=2>No
+</p>
+What symptom you have seen in yourself before this disease 
+<p>
+<!--Checkbox lets you select multiple options -->
+<input type="checkbox" name="etching">etching
+<input type="checkbox" name="fever">fever
+<input type="checkbox" name="cough /cold">cough/cold
+<input type="checkbox" name=" Skin rashes">Skin rashes
+</p>
+Which treatment healed you faster
+<!--Select box lets you choose one of the multiple dropdown options-->
+<select name="treatment" ><option>
+<option value=1 selected = "true">homeopathy
+<option value=2 >Ayurveda
+<option value=3 >Naturopathy
+<option value=4 >Traditional Chinese medicine
+<option value=5 >others
+</select>
+</br></br></font>
+<!--submits the information entered in the form by the user -->
+<input type=submit value="Submit form">
+</div>
+</form>
+</body>
+</html>
